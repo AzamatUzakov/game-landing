@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nova Square", sans-serif;
+}
+
+
+
+body {
+    background-color: rgb(49, 51, 78);
+    color: white;
+}
+
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.benner {
+    background-image: url(./img/hero-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .4s ease-in;
+    padding: 30px 0;
+
+}
+
+header a:hover {
+    color: #3CBC1C;
+    transition: .4s ease-in;
+}
+
+.hrefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.leftDescr h2 {
+    color: #3CBC1C;
+}
+
+.leftDescr h3 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.firstBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.item {
+    position: relative;
+    background-color: #1b1c1e;
+    padding: 30px 12px 10px;
+    width: 250px;
+    height: 230px;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    /* Цвет псевдоэлемента */
+    clip-path: polygon(100% 0, 90% 0, 100% 10%);
+    /* Угол обрезки */
+    z-index: 1;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+}
+
+.item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 13px;
+    color: #AFB1B6 !important;
+}
+
+
+
+.secondBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.secondBox h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secondBox p {
+    font-size: 13px;
+    color: #AFB1B6;
+}
+
+
+.secondBox button {
+    width: 100px;
+    padding: 7px 0;
+    font-size: 16px;
+    font-weight: 900;
+    border: 0;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+    transition: .4s ease-in-out;
+}
+
+.more {
+    background-color: #3CBC1C;
+    color: white;
+}
+
+.shop {
+    background-color: white;
+    color: black;
+}
+
+
+.shop:hover {
+    background-color: #3CBC1C;
+    color: black;
+    transition: .4s ease-in-out
+}
+
+.more:hover {
+    background-color: white;
+    color: black;
+    transition: .4s ease-in-out
+}
+
+.thirdBox {
+    padding: 0 30px;
+    margin-top: 90px;
+}
+
+.Flbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.Flbox img {
+    width: 250px !important;
+
+}
+
+.fouthBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.fouthBox p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.fouthBox h6 {
+    font-size: 15px;
+}
+
+.elemOne {
+    width: 100%;
+    height: 300px;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5)),
+        url(./img/moshin.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    padding: 0 5px 15px;
+
+}
+
+.elemTwo {
+    width: 100%;
+    height: 300px;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5)),
+        url(./img/jang.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    padding: 0 5px 15px;
+
+}
+
+.elemThre {
+    width: 100%;
+    height: 300px;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5)),
+        url(./img/ploykacha.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    padding: 0 5px 15px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    color: white !important;
+}
+
+footer {
+    padding: 50px 30px;
+    background-image: url(./img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    position: relative;
+    /* Добавляем относительное позиционирование */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Устанавливаем затемнение */
+    z-index: 1;
+}
+
+footer>* {
+    position: relative;
+    z-index: 2;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-color: white !important;
+}
+
+.elem p {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.midleBox p {
+    margin-left: -15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+
+
+
+
+
+/* Адаптивный дизайн для планшетов (до 768px) */
+@media (max-width: 768px) {
+
+    .footer {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .midleBox {
+        margin: 30px 0 50px;
+    }
+
+
+
+    .leftDescr h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .secondBox {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .fouthBox {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .elemOne, .elemTwo {
+        margin-bottom: 15px;
+    }
+
+}
+
+/* Адаптивный дизайн для мобильных телефонов (до 480px) */
+@media (max-width: 480px) {
+
+    header {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+.midleItem img{
+width: 100%;
+}
+
+}
